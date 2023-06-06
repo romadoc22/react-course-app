@@ -2,7 +2,7 @@ import "./Costs.css";
 import Card from "../UI/Card";
 import CostItem from "./CostItem";
 
-function Costs(props) {
+const Costs = (props) => {
   return (
     <Card className="costs">
       <CostItem
@@ -22,5 +22,5 @@ function Costs(props) {
       />
     </Card>
   );
-}
+};
 export default Costs;
