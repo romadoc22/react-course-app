@@ -1,11 +1,16 @@
 import Card from "../UI/Card";
 import "./CostItem.css";
 import CostDate from "./CostDate";
+import React, { useState } from "react";
 
 function CostItem(props) {
-  let description = props.description;
+  const [description, setDescription] = useState(
+    props.description
+  );
+
   const changeDescriptionHandler = () => {
-    description = "New Text";
+    setDescription("New cost");
+    console.log(description);
   };
   return (
     <Card className="cost-item">
@@ -17,7 +22,7 @@ function CostItem(props) {
         </div>
         <button
           onClick={changeDescriptionHandler}>
-          Змінити стан
+          Змінити опис
         </button>
       </div>
     </Card>
