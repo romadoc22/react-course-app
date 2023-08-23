@@ -5,7 +5,9 @@ import CostItem from "./CostItem";
 import CostFilter from "./CostFilter";
 
 const Costs = (props) => {
+  console.log(props)
   const [selectedYear, setSelectedYear] = useState("2021");
+  
 
   const yearChangeHandler = (year) => {
     setSelectedYear(year);

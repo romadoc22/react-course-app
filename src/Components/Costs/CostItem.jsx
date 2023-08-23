@@ -4,6 +4,8 @@ import CostDate from "./CostDate";
 
 
 function CostItem(props) {
+
+  console.log(props)
     
   return (
     <Card className="cost-item">

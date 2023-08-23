@@ -1,6 +1,7 @@
 import "./CostFilter.css";
 
 const CostFilter = (props) => {
+  console.log(props)
   const yearChangeHandler = (event) => {
     props.onChangeYear(event.target.value);
   };

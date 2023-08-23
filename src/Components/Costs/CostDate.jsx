@@ -1,6 +1,7 @@
 import "./CostDate.css";
 
 function CostDate(props) {
+  console.log(props)
   const month = props.date.toLocaleString(
     "uk-UK",
     { month: "long" }
